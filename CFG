@@ -1,0 +1,13 @@
+Vars:
+    A
+End
+Sigma:
+#sectiunea cu alfabetul
+    0
+    1
+End
+Rules:
+#sectiunea cu regulile
+    A , 0A1
+    A , 01
+End

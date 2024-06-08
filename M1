@@ -1,0 +1,23 @@
+#DFA care accepta toate string-urile care au lungime para
+Sigma:
+#sectiunea alfabetului - simboluri:
+    0
+    1
+End
+States:
+#sectiune cu multimea de stari
+#o stare initiala este precedata de " , S"
+#o stare finala este precedata de " , F"
+#o stare care este si initiala si finala este precedata de " , S , F"
+#o stare care nu este nici initiala, nici finala, nu este precedata de nimic
+   q0 , S , F
+   q1
+End
+Transitions:
+#sectiune cu delta
+#tranzitiile de forma starea1----simbol---->starea2
+    q0 , 0 , q1
+    q0 , 1 , q1
+    q1 , 0 , q0
+    q1 , 1 , q0
+End

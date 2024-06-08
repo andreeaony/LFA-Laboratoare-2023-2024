@@ -1,0 +1,21 @@
+#L(M2)={w|w ends with 11}
+Sigma:
+#sectiunea cu alfabetul
+    0
+    1
+End
+States:
+#sectiunea cu multimea de stari
+   q0 , S
+   q1
+   q2 , F
+End
+Transitions:
+#sectiunea cu delta
+    q0 , 0 , q0
+    q0 , 1 , q1
+    q1 , 0 , q0
+    q1 , 1 , q2
+    q2 , 0 , q0
+    q2 , 1 , q2
+End
